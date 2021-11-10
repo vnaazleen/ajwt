@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+
+    <style>
+        .header {
+            color: red;
+            height: 100px;
+        }
+
+        .header h1 {
+            padding-top: 25px;
+        }
+
+        .header img {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <p style="float: left;"><img src="employee.png" height="50px"></p>
+        <p><h1>Employee Registration Form</h1></p>
+    </div>
+
+    <form action="#">
+        <table cellspacing="15">
+            <tr>
+                <th></th>
+                <td>
+                    <input type="radio" value="mr" name="gender"/>Mr.
+                    <input type="radio" value="mrs" name="gender"/>Mrs.
+                    <input type="radio" value="ms" name="gender"/>Ms.
+                </td>
+            </tr>
+
+            <tr>
+                <th><label>First Name</label></th>
+                <td><input type="text" name="fname" placeholder="First Name"></td>
+            </tr>
+
+            <tr>
+                <th><label>Last Name</label></th>
+                <td><input type="text" name="lname" placeholder="Last Name"/></td>
+            </tr>
+
+            <tr>
+                <th><label>Mail Address 1</label></th>
+                <td><input type="text" name="add1"/></td>
+            </tr>
+
+            <tr>
+                <th><label>Mail Address 2</label></th>
+                <td><input type="text" name="add2"/></td>
+            </tr>
+
+            <tr>
+                <th><label>City</label></th>
+                <td><input type="text" name="city"/></td>
+            </tr>
+
+            <tr>
+                <th><label>State</label></th>
+                <td>
+                    <select>
+                        <option value=”ap”>Andhra Pradesh</option>
+                        <option value=”tel”>Telangana</option>
+                        <option value=”krn”>Karnataka</option>
+                        <option value=”tn”>Tamil Nadu</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label>Zip</label></th>
+                <td><input type="number" name="zip"/></td>
+            </tr>
+
+            <tr>
+                <th><label>Upload photo</label></th>
+                <td><input type="file" name="photo"/></td>
+            </tr>
+
+            <tr>
+                <th><label>E-Mail</label></th>
+                <td><input type="email" name="email"/></td>
+            </tr>
+
+            <tr>
+                <th><label>Mobile</label></th>
+                <td>
+                    <select>
+                        <option data-countryCode="IN" value="91">+91</option>
+                        <option data-countryCode="US" value="1">+1</option>
+                    </select>
+                    <input type="tel" name="mobile"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label>Languages Known</label></th>
+                <td>
+                    <input type="checkbox" name="lang" value="english"/>English <br/>
+                    <input type="checkbox" name="lang" value="hindi"/>Hindi<br/>
+                    <input type="checkbox" name="lang" value="telugu"/>Telugu<br/>
+                    <input type="checkbox" name="lang" value="tamil"/>Tamil<br/>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label>Additional Information</label></th>
+                <td>
+                    <textarea name="additional" rows="5" placeholder="Optional"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th></th>
+                <td>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+</html>
