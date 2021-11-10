@@ -1,0 +1,22 @@
+body{
+    background-color: pink;
+}
+
+h1 {
+    padding-left:30%;
+    font-size:30pt;
+    background-color:deeppink;
+    color:aliceblue;
+}
+
+h2 {
+    color: deeppink;
+}
+
+ul, p {
+    color: aliceblue;
+}
+
+hr {
+    border-top: 3px dashed deeppink;
+}
