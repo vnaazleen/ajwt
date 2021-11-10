@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        h1 {
+            padding-left:30%;
+            font-size:30pt;
+            background-color:deeppink;
+            color:aliceblue;
+        }
+
+        h2 {
+            color: deeppink;
+        }
+
+        ul, p {
+            color: aliceblue;
+        }
+
+        hr {
+            border-top: 3px dashed deeppink;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Internal CSS ✨</h1>
+    <p>
+        The internal style sheet is used to add a unique style for a single document. It is defined in &lt;head&gt; section of the HTML page inside the &lt;style&gt; tag.
+    </p>
+
+    <h2>
+        CSS Style Code applied to Header
+    </h2>
+
+    <pre>
+        &lt;style&gt;
+            body{
+                background-color: pink;
+            }
+    
+            h1 {
+                padding-left:30%;
+                font-size:30pt;
+                background-color:deeppink;
+                color:aliceblue;
+            }
+    
+            h2 {
+                color: deeppink;
+            }
+    
+            p {
+                color: aliceblue;
+            }
+    
+            hr {
+                border-top: 3px dashed deeppink;
+            }
+        &lt;/style&gt;
+    </pre>
+
+    <hr>
+
+    <h2>Disadvantages of Inline CSS</h2>
+    <ul>
+        <li>If we have 25 HTML pages,all the pages should have their own styles defined in each file even though they use same styling</li>
+    </ul>
+</body>
+</html>
