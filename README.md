@@ -15,3 +15,7 @@
   * [Inline CSS](https://vnaazleen.github.io/ajwt/CSS/inline_css.html)
   * [Internal CSS](https://vnaazleen.github.io/ajwt/CSS/internal_css.html)
   * [External CSS](https://vnaazleen.github.io/ajwt/CSS/External_CSS/)
+* [Program 5 CSS](https://github.com/vnaazleen/ajwt/tree/main/Program_5_CSS)
+  * [a) Text shadows, rounded corners and Box shadowrs](https://github.com/vnaazleen/ajwt/tree/main/Program_5_CSS/a.html) - [view here](https://vnaazleen.github.io/ajwt/Program_5_CSS/a.html)
+  * [b) Linear and Radial Gradients](https://github.com/vnaazleen/ajwt/tree/main/Program_5_CSS/b.html) - [view here](https://vnaazleen.github.io/ajwt/Program_5_CSS/b.html)
+  * [c) Animations](https://github.com/vnaazleen/ajwt/tree/main/Program_5_CSS/c.html) - [view here](https://vnaazleen.github.io/ajwt/Program_5_CSS/c.html)
