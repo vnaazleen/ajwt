@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Math Expression</title>
+	</head>
+	
+	<body>
+		<table>
+			<tr>
+				<th>Expression:</th>
+				<td><input type="text" id="expression" placeholder="Enter expression"/></td>
+			</tr>
+			<tr>
+				<th>Result:</th>
+				<td><input type="text" id="result" disabled/></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><input type="button" onclick="calculate()" value="Evaluate"/></td>
+			</tr>
+		</table>
+	</body>
+	
+	<script>
+		
+		function calculate() {
+			let expression = document.getElementById("expression").value
+			let result = eval(expression)
+			document.getElementById("result").value = result;
+		}
+		
+	</script>
+</html>
