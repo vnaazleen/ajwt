@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>User Info</title>
+	</head>
+	
+	<body>
+		<form onsubmit="display()">
+			<table>
+			<tr>
+				<th><label for="fname">First Name:</label></th>
+				<td><input type="text" name="fname" id="fname" placeholder="Enter you first name..."/> </td>
+			</tr>
+			
+			<tr>
+				<th><label for="lname">Last Name:</label></th>
+				<td><input type="text" name="lname" id="lname" placeholder="Enter you Last name..."/> </td>
+			</tr>
+			
+			<tr>
+				<th><label for="dob">DOB:</label></th>
+				<td><input type="date" name="dob" id="dob"/></td>
+			</tr>
+
+			<tr>
+				<th><input type="submit" value="Submit"/></th>
+				<td><input type="reset" value="Reset"/></td>
+			</tr>
+			</table>
+		</form>
+		
+		
+		<script>
+			function display() {
+				let fname = document.getElementById('fname').value
+				let lname = document.getElementById('lname').value
+				let dob = document.getElementById('dob').value
+				
+				document.writeln(fname);
+				document.writeln(lname);
+				document.writeln(dob);
+			}
+		</script>
+	</body>
+</html>
