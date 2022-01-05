@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Book Store</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="displayBooks()">
+    
+
+    <div class="header">
+        <h1>CYBER BOOK STORE</h1>
+    </div>
+
+    <div class="main">
+        
+        <aside>
+            <nav>
+                <table>
+                    <tr><th>Subjects</th></tr>
+                    <tr><td onclick="displayBooks()">All</td></tr>
+                    <tr><td onclick="displayBooksBySubject('c')">C/C++</td></tr>
+                    <tr><td onclick="displayBooksBySubject('java')">Java</td></tr>
+                    <tr><td onclick="displayBooksBySubject('python')">Python</td></tr>
+                </table>
+            </nav>
+        </aside>
+
+        <div class="content">
+            <h3 id="title">ALL BOOKS</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
