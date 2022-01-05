@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Register</title>
+	</head>
+	
+	<body>
+		<form name="myForm" onsubmit="return(validate());">
+			<table cellspacing="5">
+				<tr>
+					<th>Name</th>
+					<td><input type="text" name="Name"></td>
+				</tr>
+				
+				<tr>
+					<th>Email</th>
+					<td><input type="email" name="email"></td>
+				</tr>
+				
+				<tr>
+                	<th>Zip Code</th>
+                	<td><input type = "text" name = "zip" /></td>
+            	</tr>
+            
+				<tr>
+                	<th>Country</th>
+                	<td>
+						<select name = "country" >
+                        	<option value = "-1" selected> [Choose Yours]</option>
+                        	<option value = "1" >INDIA</option>
+                        	<option value = "2" >USA</option>
+                        	<option value = "3" >Srilanka</option>
+                    	</select>
+                	</td>
+				</tr>
+				
+				<tr>
+					<td colspan = "2" align = "center">
+						<input type = "submit" value = "Submit" />
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		<script>
+			
+			function validate() {
+				let name = document.myForm.Name.value
+				if(name == "") {
+					alert("Please specify your name")
+					return false;
+				}
+				
+				let email = document.myForm.email.value
+				if(email == "") {
+					alert("Please specify your email")
+					return false;
+				}
+				
+				let zip = document.myForm.zip.value
+				if(zip == "") {
+					alert("Please specify the zip field")
+					return false;
+				}
+				
+				let country = document.myForm.country.value
+				if(country == -1) {
+					alert("Please select your country")
+					return false;
+				}
+				
+				document.writeln("Registered Successfully :)")
+				return true;
+			}
+			
+		</script>
+	</body>
+</html>			
