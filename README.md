@@ -31,3 +31,19 @@
 * Program 9 - Cyber Book Store
   * [Code](https://github.com/vnaazleen/ajwt/tree/main/CyberBookStore)
   * [Ouput](https://vnaazleen.github.io/ajwt/CyberBookStore/)
+* Program 11 - Login Limit
+  * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/login_limit.html)
+  * [Output](https://vnaazleen.github.io/ajwt/JS/login_limit.html)
+* Program 12 - Phone number Validation
+  * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/program_12.html)
+  * [Output](https://vnaazleen.github.io/ajwt/JS/program_12.html)
+* Program 13 - Date
+  * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/date.html)
+  * [Output](https://vnaazleen.github.io/ajwt/JS/date.html)
+* Program 14 - Student Reistration (Focus event on input)
+  * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/student_register.html)
+  * [Output](https://vnaazleen.github.io/ajwt/JS/student_register.html)
+* Program 15 - Images (Mouse event)
+  * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/images.html)
+  * [Output](https://vnaazleen.github.io/ajwt/JS/images.html)
+
