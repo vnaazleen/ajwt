@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+
+    <style>
+        img {
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" onmouseover="beAngry()" onmouseleave="beHappy()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkn2z5bEs4_M6TOYmQ-YpOMqNir5q0WekMaw&usqp=CAU" alt="Dog img"/>
+    <p>dont touch me, ill be angy</p>
+
+
+    <script>
+
+        function beAngry() {
+            console.log("Mouse over")
+            const img = document.getElementById("image")
+            img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmST4Mnx9VYgtDIwbUKTA7538vPU5QDTbD4jz3vK9-gofuef2xrG5gbCrRjB5h0iCZi0&usqp=CAU")
+        }
+
+
+        function beHappy() {
+            const img = document.getElementById("image")
+            img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkn2z5bEs4_M6TOYmQ-YpOMqNir5q0WekMaw&usqp=CAU")
+        }
+
+    </script>
+</body>
+</html>
