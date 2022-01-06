@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <style>
+        form {
+            margin: 0 auto; 
+            width: 400px;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-top: 25vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return infoValidate()">
+        <center>
+        <table cellspacing="15">
+            <tr>
+                <td colspan="2" align="center"><h1>User Information</h1></td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"/></td>
+            </tr>
+
+            <tr>
+                <td>Phone No</td>
+                <td><input type="text" id="phno"/></td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td><textarea id="address" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" id="login" value="Login"/></td>
+            </tr>
+        </table>
+        </center>
+    </form>
+
+    <script>
+        
+        function infoValidate() {
+            const phno = document.getElementById("phno").value 
+            if(phno.length != 10) {
+                alert("Phone number should 10 characters long")
+                return false
+            } 
+
+            for (let i = 0; i < 10; i++) {
+                let c = phno[i]
+                if(!(c >= '0' && c <= '9')) {
+                    alert("Phone number should have numbers only")
+                    return false
+                }
+            }
+
+            document.writeln("Information is valid, thank you ;)")
+            return true
+        }
+
+    </script>
+</body>
+</html>
