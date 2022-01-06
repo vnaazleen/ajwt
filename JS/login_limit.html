@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Validation</title>
+
+    <style>
+        #warning {
+            color: red;
+        }
+
+        form {
+            margin: 0 auto; 
+            width: 500px;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-top: 25vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return loginValidate()">
+        <center>
+            <table cellspacing="15">
+                <tr>
+                    <td colspan="2" align="center"><h1>Login</h1></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input type="text" id="username"/></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" id="password"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" id="login" value="Login"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><p id="warning"></p></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+
+    <script>
+
+        const username = "admin"
+        const password = "admin"
+
+        let tries = 0
+
+        function loginValidate() {
+            console.log("Click", tries)
+
+            const check_username = document.getElementById("username").value 
+            const check_password = document.getElementById("password").value
+            console.log(check_username)
+            if(check_username == username && check_password == password) {
+                document.writeln("Admin Login successful!")
+                return true
+            } else {
+                tries += 1 
+
+                // Disable button over 3 tries
+                if(tries == 3) {
+                    const loginBtn = document.getElementById("login")
+                    loginBtn.disabled = true
+
+                    document.getElementById("warning").innerHTML = "Tries limit exceeded, Try again later :("
+                }
+
+                alert("Incorrect username or password :(")
+                return false
+            }
+        }
+
+    </script>
+
+</body>
+</html>
