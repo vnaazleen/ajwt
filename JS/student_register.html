@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 14 - Student Register</title>
+</head>
+<body>
+    <form onsubmit="return register()">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" id="name" name="name"/></td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td><input onfocus="displayMessage()"  onfocusout="checkMessage()" id="age" type="number" name="age"/></td>
+            </tr>
+
+            <tr>
+                <th>Father Name</th>
+                <td><input type="text" id="fname" name="fname"/></td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2"><input type="submit" value="Submit"/></td>
+            </tr>
+        </table>
+        <p id="message"></p>
+    </form>
+
+    <script>
+
+        function displayMessage() {
+            message = document.getElementById("message")
+            message.innerHTML = "Age should be 18 to 25"
+        }
+
+        function checkMessage() {
+            const age = document.getElementById("age").value 
+            if(age >= 18 && age <= 25) {
+                clearMessage()
+                return true
+            } else {
+                alert("Invalid age, Age should be between 18 to 25 only")
+                return false
+            }
+        }
+
+        function clearMessage() {
+            message = document.getElementById("message")
+            message.innerHTML = ""
+        }
+
+        function register() {
+            if(checkMessage()) {
+                document.writeln("Registration successful :)")
+                return true
+            } 
+            return false
+        }
+
+    </script>
+</body>
+</html>
