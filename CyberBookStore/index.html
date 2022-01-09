@@ -19,13 +19,19 @@
         
         <aside>
             <nav>
-                <table>
-                    <tr><th>Subjects</th></tr>
-                    <tr><td onclick="displayBooks()">All</td></tr>
-                    <tr><td onclick="displayBooksBySubject('c')">C/C++</td></tr>
-                    <tr><td onclick="displayBooksBySubject('java')">Java</td></tr>
-                    <tr><td onclick="displayBooksBySubject('python')">Python</td></tr>
-                </table>
+                <form>
+                    <table>
+                        <tr><th><label for="subjects">Subjects</label></th></tr>
+                        <tr><td>
+                            <select onchange="displayBooksBySubject()" name="subjects" id="subjects">
+                                <option checked value="all">All</option>
+                                <option value="c">C/C++</option>
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </td></tr>
+                    </table>
+                </form>
             </nav>
         </aside>
 

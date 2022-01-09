@@ -28,6 +28,10 @@ table {
     margin-left: 10px;
 }
 
+select {
+    width: 100%;
+}
+
 th, td {
     padding: 5px;
 }
@@ -35,15 +39,6 @@ th, td {
 th {
     font-size: larger;
     color: #30475E;
-}
-
-td {
-    border: 1px solid black;
-}
-
-td:hover {
-    background-color: #ECB365;
-    color: #064663;
 }
 
 .content {

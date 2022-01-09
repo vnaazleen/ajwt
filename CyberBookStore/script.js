@@ -64,9 +64,10 @@ function displayBooks() {
     document.body.appendChild(cards);
 }
 
-function displayBooksBySubject(subject) {
-    console.log(subject)
+function displayBooksBySubject() {
 
+    let subject = document.getElementById("subjects").value
+    console.log(subject)
     document.getElementById("title").innerHTML = subject.toUpperCase() + " BOOKS"
 
     let cards = document.getElementsByClassName("cards")[0];
@@ -75,7 +76,7 @@ function displayBooksBySubject(subject) {
 
     for(let i = 0; i < books.length; i++) {
 
-        if(books[i].subject != subject) {
+        if(books[i].subject != subject && subject != "all") {
             continue
         }
 
