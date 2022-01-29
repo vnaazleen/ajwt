@@ -46,4 +46,6 @@
 * Program 15 - Images (Mouse event)
   * [Code](https://github.com/vnaazleen/ajwt/blob/main/JS/images.html)
   * [Output](https://vnaazleen.github.io/ajwt/JS/images.html)
-
+* Program 20 - HTML + JS + XML (Parsing XML using JS)
+  * [Code](https://github.com/vnaazleen/ajwt/tree/main/Program_20_XML)
+  * [Output](https://vnaazleen.github.io/ajwt/Program_20_XML/User.html)
